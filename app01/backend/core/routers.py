@@ -1,0 +1,20 @@
+from rest_framework import routers
+from . import viewsets as v
+
+router = routers.DefaultRouter()
+router.register(r'clients', v.ClientViewSet)
+router.register(r'projects', v.ProjectViewSet)
+router.register(r'documents', v.DocumentViewSet)
+router.register(r'project-users', v.ProjectUserViewSet)
+router.register(r'ifc-projects', v.IfcProjectViewSet)
+router.register(r'ifc-sites', v.IfcSiteViewSet)
+router.register(r'ifc-buildings', v.IfcBuildingViewSet)
+router.register(r'ifc-storeys', v.IfcStoreyViewSet)
+router.register(r'ifc-spaces', v.IfcSpaceViewSet)
+router.register(r'ifc-elements', v.IfcElementViewSet)
+router.register(r'ifc-relations', v.IfcRelationViewSet)
+router.register(r'lots', v.LotViewSet)
+router.register(r'ensembles', v.EnsemblePrestationViewSet)
+router.register(r'prestations', v.PrestationViewSet)
+router.register(r'quantities', v.PrestationQtyViewSet)
+router.register(r'audit-logs', v.AuditLogViewSet)
