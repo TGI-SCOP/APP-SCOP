@@ -2,7 +2,14 @@
 
 ## Contenu
 - `docker-compose.yml` : services PostgreSQL et pgAdmin.
-- `.env` : variables d'environnement (base, utilisateurs, mots de passe).
+- `.env` : variables d'environnement (base, utilisateurs, mots de passe). **Créez ce fichier avec les variables suivantes :**
+  ```
+  POSTGRES_DB=db_coeur
+  POSTGRES_USER=postgres
+  POSTGRES_PASSWORD=postgres
+  PGADMIN_DEFAULT_EMAIL=admin@example.com
+  PGADMIN_DEFAULT_PASSWORD=admin123
+  ```
 - `postgres/initdb/*.sql` : scripts d'initialisation exécutés **une seule fois** lors de la création du volume.
   L'ordre est garanti par la numérotation.
 
